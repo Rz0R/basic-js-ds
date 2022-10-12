@@ -14,7 +14,6 @@ const { ListNode } = require('../extensions/list-node.js');
  * queue.getUnderlyingList() // returns { value: 3, next: null }
  */
 class Queue {
-
   constructor() {
     this.list = null;
   }
@@ -40,7 +39,8 @@ class Queue {
     this.list = this.list.next;
     return value;
   }
-
 }
 
-module.exports = Queue;
+module.exports = {
+  Queue,
+};

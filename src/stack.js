@@ -13,7 +13,6 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 class Stack {
-
   constructor() {
     this.stack = [];
   }
@@ -31,4 +30,6 @@ class Stack {
   }
 }
 
-module.exports = Stack;
+module.exports = {
+  Stack,
+};
